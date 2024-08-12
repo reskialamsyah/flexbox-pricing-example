@@ -1,2 +1,3 @@
 # flexbox-pricing-example
-Pricing Example based on https://getbootstrap.com/docs/5.3/examples/pricing/ using Flexbox (Vanilla HTML &amp; CSS)
+Exercise using Flexbox CSS.
+Layout done, need more style.
