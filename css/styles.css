@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
-  background-color: #212529;
+  background-color: #1c1b1f;
 }
 
 h1,
@@ -13,7 +13,7 @@ h5,
 h6,
 p {
   margin: 0;
-  color: white;
+  color: #e6e1e5;
 }
 
 ul {
@@ -34,7 +34,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  border-bottom: solid 0.75px;
+  border-bottom: solid 0.75px #3a3843;
 }
 
 .nav-brand > a {
@@ -49,6 +49,25 @@ ul {
   padding: 0;
   display: flex;
   gap: 1.5rem;
+}
+
+.brand-icon {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #e6e1e5;
+}
+
+.nav-item-links {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #e6e1e5;
+}
+
+.nav-item-links:hover,
+.brand-icon:hover {
+  color: #70b5ff;
+  transition: 300ms;
 }
 
 /* Pricing Header */
@@ -66,6 +85,8 @@ ul {
 .section-header-pricing > p {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  color: #bbb0b9;
+  line-height: 160%;
 }
 
 /* Pricing Card */
@@ -77,21 +98,82 @@ ul {
 
 .card {
   text-align: center;
-  background-color: #212529;
-  border: solid white 1px;
+  background-color: #2a2831;
+  border: solid #3a3843 0.7px;
+  border-radius: 10px;
   margin-bottom: 1.5rem;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.enterprise {
+  border: solid 0.7px #0d6efd;
+}
+
+.title-card,
+.card-content {
+  padding: 1rem;
+}
+
+.title-card {
+  border-bottom: solid 0.7px #524e5f;
+}
+
+.main-title-card {
+  background-color: #0d6efd;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
 }
 
 .card h2 {
-  color: #dee2e6;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card span {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .card h3 {
-  color: #dee2e6;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
-.card p {
-  color: #dee2e6;
+.card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 1rem;
+}
+
+.btn-card-pricing {
+  border: none;
+  width: 100%;
+  padding: 16px 8px;
+  border-radius: 20px;
+  background-color: #0d6efd;
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+.btn-card-pricing:hover {
+  background-color: #115fd4;
+  transition: 300ms;
+}
+
+.outline-btn {
+  color: #0d6efd;
+  border: solid 1px #0d6efd;
+  background-color: transparent;
+}
+
+.outline-btn:hover {
+  background-color: #0d6efd;
+  color: #e6e1e5;
+  transition: 300ms;
 }
 
 /* Compare Plans */
@@ -109,7 +191,11 @@ ul {
 .table-title {
   display: flex;
   justify-content: flex-end;
-  border-bottom: solid white 0.75px;
+  border-bottom: solid #5b5869 1px;
+}
+
+.table-content > p {
+  font-weight: 600;
 }
 
 .table-title > .small {
@@ -128,7 +214,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 3rem;
-  border-top: solid white 1px;
+  border-top: solid #5b5869 1px;
+  margin-bottom: 4rem;
 }
 
 .footer-brand {
@@ -157,7 +244,17 @@ footer {
 .footer-items {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+}
+
+.footer-items > a {
+  text-decoration: none;
+  color: #948e93;
+}
+
+.footer-items > a:hover {
+  color: #e6e1e5;
+  transition: 300ms;
 }
 
 .footer-items > h3 {
